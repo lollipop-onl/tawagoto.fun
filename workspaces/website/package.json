@@ -1,0 +1,33 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "dependencies": {
+    "@nuxt/typescript-runtime": "^2.0.0",
+    "@nuxtjs/composition-api": "^0.13.5",
+    "nuxt": "^2.14.7",
+    "reset-css": "^5.0.1"
+  },
+  "devDependencies": {
+    "@lollipop-onl/vuex-typesafe-helper": "^1.0.0",
+    "@nuxt/types": "^2.14.7",
+    "@nuxt/typescript-build": "^2.0.3",
+    "@nuxtjs/eslint-config-typescript": "^4.0.0",
+    "eslint": "^7.11.0",
+    "eslint-config-prettier": "^6.14.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "node-sass": "^4.14.1",
+    "prettier": "^2.1.2",
+    "sass-loader": "^10.0.4",
+    "stylelint": "^13.7.2",
+    "stylelint-config-recess-order": "^2.2.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-rscss": "^0.4.0",
+    "stylelint-scss": "^3.18.0"
+  },
+  "scripts": {
+    "dev": "nuxt-ts dev",
+    "build": "nuxt-ts generate",
+    "lint:js": "eslint --ext vue,ts .",
+    "lint:css": "stylelint \"**/*.{vue,scss}\""
+  }
+}
