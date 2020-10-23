@@ -1,5 +1,8 @@
 name: Svelte check
-on: push
+on:
+  push:
+    paths:
+      - '**.svelte'
 jobs:
   check:
     name: svelte-checkを実行
