@@ -1,0 +1,13 @@
+name: Svelte check
+on: push
+jobs:
+  check:
+    name: svelte-checkを実行
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Run svelte-check validation
+        run: yarn validate
