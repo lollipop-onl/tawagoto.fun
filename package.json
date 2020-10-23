@@ -3,5 +3,9 @@
   "version": "1.0.0",
   "repository": "https://github.com/lollipop-onl/tawagoto.fun.git",
   "author": "lollipop-onl <lollipop@simochee.net>",
-  "license": "MIT"
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "workspaces/*"
+  ]
 }
